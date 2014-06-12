@@ -7,3 +7,8 @@ video {
 		height: 690px !important;
 		overflow: hidden;
 }
+.headertext{
+margin-top: -1300px;
+z-index: 99;
+position: relative;	
+}
