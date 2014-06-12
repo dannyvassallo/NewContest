@@ -1,1 +1,1 @@
-//= require_tree .
+//= require vendor/_stickyfooter
