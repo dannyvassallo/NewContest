@@ -6,9 +6,24 @@ video {
 		width: 100%;
 		height: 690px !important;
 		overflow: hidden;
+		top: 0
 }
 .headertext{
 margin-top: -1300px;
 z-index: 99;
 position: relative;	
+}
+.paperdown{
+height: 50px;
+background-image: url("../images/tornpaperdown.png");
+background-repeat: repeat-x;
+width: 100%;
+position: absolute; 	
+}
+.paperupheader{
+height: 50px;
+background-image: url("../images/tornpaperup.png");
+background-repeat: repeat-x;
+width: 100%;
+margin-top: -50px; 	
 }
