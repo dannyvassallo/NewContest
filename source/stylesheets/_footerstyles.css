@@ -1,0 +1,12 @@
+footer {
+background-color: black;
+}
+#footerwrap{
+max-width: 800px;
+margin: 0 auto;
+}
+.socials i{
+color: white;
+font-size: 35px;
+padding: 20px 5px 20px 5px;
+}
