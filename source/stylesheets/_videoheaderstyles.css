@@ -8,10 +8,10 @@ video {
 		overflow: hidden;
 		top: 0;
 }
-.headertext{
-margin-top: -1300px;
-z-index: 99;
-position: relative;	
+.content{
+position: absolute;
+top: 0;
+width: 100%;
 }
 
 .paperdown, .paperupheader{
@@ -29,4 +29,9 @@ background-image: url("../images/tornpaperup.png");
 bottom: 40px;
 position: relative;
 z-index: 99; 	
+}
+
+.shadow {
+    -webkit-filter: drop-shadow( 5px 5px 5px #000 );
+            filter: drop-shadow( 5px 5px 5px #000 ); /* Same syntax as box-shadow */
 }
