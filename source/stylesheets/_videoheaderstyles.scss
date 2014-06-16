@@ -8,12 +8,15 @@ video {
 		overflow: hidden;
 		top: 0;
 }
+
 .content{
 position: absolute;
-top: 0;
+top: 60px;
 width: 100%;
 }
-
+.logo{
+width: 40%;	
+}
 .paperdown, .paperupheader{
 height: 50px;
 background-repeat: repeat-x;
@@ -26,7 +29,8 @@ position: absolute;
 }
 .paperupheader{
 background-image: url("../images/tornpaperup.png");
-bottom: 40px;
+/*height of image*/
+bottom: 50px;
 position: relative;
 z-index: 99; 	
 }
