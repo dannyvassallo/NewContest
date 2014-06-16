@@ -1,29 +1,32 @@
 video {
     width: 100%;
     box-sizing: border-box;
+    z-index: 1 !important;
 }
 #video-wrap{
 		width: 100%;
-		height: 690px !important;
 		overflow: hidden;
-		top: 0
+		top: 0;
 }
 .headertext{
 margin-top: -1300px;
 z-index: 99;
 position: relative;	
 }
-.paperdown{
+
+.paperdown, .paperupheader{
 height: 50px;
-background-image: url("../images/tornpaperdown.png");
 background-repeat: repeat-x;
 width: 100%;
+}
+
+.paperdown{
+background-image: url("../images/tornpaperdown.png");
 position: absolute; 	
 }
 .paperupheader{
-height: 50px;
 background-image: url("../images/tornpaperup.png");
-background-repeat: repeat-x;
-width: 100%;
-margin-top: -50px; 	
+bottom: 40px;
+position: relative;
+z-index: 99; 	
 }
