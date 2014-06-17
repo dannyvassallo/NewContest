@@ -1,0 +1,27 @@
+.paperup1, .paperdown2{
+height: 50px;
+background-repeat: repeat-x;
+width: 100%; 	
+}
+.paperup1{
+background-image: url("../images/tornpaperup.png");
+}
+.paperdown2{
+background-image: url("../images/tornpaperdown.png");
+}
+.black-container{
+background-color: black;
+margin: 0 auto;
+
+	h1, h3{
+	color: #fff;
+	margin: 0 auto;
+	font-family: 'Special Elite', cursive;
+	}
+	h1{
+	font-size: 50px;
+	}
+	h3{
+	text-transform: uppercase;
+	}
+}
