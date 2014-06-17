@@ -1,0 +1,34 @@
+.pulse2{
+	animation-name: pulse2;
+	-webkit-animation-name: pulse2;	
+
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse2 {
+	0% {
+		transform: scale(0.9);
+	}
+	50% {
+		transform: scale(1);
+	}	
+	100% {
+		transform: scale(0.9);
+	}			
+}
+
+@-webkit-keyframes pulse2 {
+	0% {
+		-webkit-transform: scale(0.95);
+	}
+	50% {
+		-webkit-transform: scale(1);
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+	}			
+}

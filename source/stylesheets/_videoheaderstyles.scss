@@ -9,7 +9,6 @@ video {
 }
 #video-wrap{
 		width: 100%;
-		height: 100%;
 		overflow: hidden;
 		top: 0;
 			h1 {
@@ -22,9 +21,11 @@ video {
 position: absolute;
 top: 60px;
 width: 100%;
+height: 100%;
 }
 .logo{
-width: 40%;	
+width: 100%;
+max-width: 40%;	
 }
 .paperdown, .paperupheader{
 height: 50px;
@@ -33,11 +34,11 @@ width: 100%;
 }
 
 .paperdown{
-background-image: url("../images/tornpaperdown.png");
+background-image: url("../images/darktexturerepeatingdown.png");
 position: absolute; 	
 }
 .paperupheader{
-background-image: url("../images/tornpaperup.png");
+background-image: url("../images/darktexturerepeating.png");
 /*height of image*/
 bottom: 50px;
 position: relative;
@@ -47,4 +48,14 @@ z-index: 99;
 .shadow {
     -webkit-filter: drop-shadow( 5px 5px 5px #000 );
             filter: drop-shadow( 5px 5px 5px #000 ); /* Same syntax as box-shadow */
+}
+
+.shadowpaperdown {
+    -webkit-filter: drop-shadow( 5px 5px 5px rgba(0, 0, 0, 0.5) );
+            filter: drop-shadow( 5px 5px 5px rgba(0, 0, 0, 0.5) ); /* Same syntax as box-shadow */
+}
+
+.shadowpaperup {
+    -webkit-filter: drop-shadow( 0px -10px 5px rgba(0, 0, 0, 0.5) );
+            filter: drop-shadow( 0px -10px 5px rgba(0, 0, 0, 0.5) ); /* Same syntax as box-shadow */
 }
