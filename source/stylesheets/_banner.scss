@@ -12,6 +12,7 @@ background-image: url("../images/tornpaperdown.png");
 .black-container{
 background-color: black;
 margin: 0 auto;
+padding-bottom: 100px;
 
 	h1, h3{
 	color: #fff;
@@ -26,6 +27,16 @@ margin: 0 auto;
 	}
 }
 
+#overflow-hider{
+	width:375px;
+	padding-top:52px;
+	height:312px;
+	overflow:hidden;
+}
+
+.prizing{
+padding-top: 52px;
+}
 
 
 //MEDIA QUERIES//
