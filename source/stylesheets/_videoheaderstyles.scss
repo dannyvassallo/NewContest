@@ -1,35 +1,65 @@
-video {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 1 !important;
+//VARIABLES//
+$special : 'Special Elite', cursive;
+
+//END VARAIBLES//
+
+
+//MIXINS//
+@mixin shadow($a, $b, $c, $d){
+    -webkit-filter: drop-shadow( $a $b $c $d );
+            filter: drop-shadow( $a $b $c $d );
 }
+
+@mixin cover(){
+width: 100%;
+height: 100%;
+}
+
+// END MIXINS//
+
+
+
+// SCSS //
+
+
+//VIDEO//
 #video-wrap{
 		width: 100%;
 		overflow: hidden;
 		top: 0;
 			
 			h1 {
-				font-family: 'Special Elite', cursive;
+				font-family: $special
 				}
 
-}
+            video {
+                width: 100%;
+                box-sizing: border-box;
+                z-index: 1 !important;
+            }
 
+}
+//END VIDEO//
+
+
+//CONTENT//
 .content{
 position: absolute;
 top: 60px;
-width: 100%;
-height: 100%;
+@include cover
 }
 .logo{
 width: 100%;
 max-width: 40%;	
 }
+//END CONTENT//
+
+//CRACKED TEXTURE//
 .paperdown, .paperupheader{
 height: 50px;
 background-repeat: repeat-x;
 width: 100%;
 }
-
 .paperdown{
 background-image: url("../images/darktexturerepeatingdown.png");
 position: absolute; 	
@@ -41,18 +71,15 @@ bottom: 50px;
 position: relative;
 z-index: 99; 	
 }
+//END CRACKED TEXTURE//
 
-.shadow {
-    -webkit-filter: drop-shadow( 5px 5px 5px #000 );
-            filter: drop-shadow( 5px 5px 5px #000 ); /* Same syntax as box-shadow */
-}
+//SHADOWS//
+.shadow { @include shadow(5px, 5px, 5px, #000) }
+.shadowpaperdown { @include shadow( 5px, 5px, 5px, rgba(0, 0, 0, 0.5) ); }
+.shadowpaperup { @include shadow( 0px, -10px, 5px, rgba(0, 0, 0, 0.5) ); }
+//END SHADOWS//
 
-.shadowpaperdown {
-    -webkit-filter: drop-shadow( 5px 5px 5px rgba(0, 0, 0, 0.5) );
-            filter: drop-shadow( 5px 5px 5px rgba(0, 0, 0, 0.5) ); /* Same syntax as box-shadow */
-}
 
-.shadowpaperup {
-    -webkit-filter: drop-shadow( 0px -10px 5px rgba(0, 0, 0, 0.5) );
-            filter: drop-shadow( 0px -10px 5px rgba(0, 0, 0, 0.5) ); /* Same syntax as box-shadow */
-}
+
+// END SCSS //
+
