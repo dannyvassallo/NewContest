@@ -1,3 +1,7 @@
+h1 {
+texttransform: uppercase	
+}
+
 video {
     width: 100%;
     box-sizing: border-box;
@@ -7,6 +11,10 @@ video {
 		width: 100%;
 		overflow: hidden;
 		top: 0;
+			h1 {
+				texttransform: uppercase;	
+				font-family: 'Special Elite', cursive;
+				}
 }
 
 .content{
