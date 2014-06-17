@@ -25,3 +25,15 @@ margin: 0 auto;
 	text-transform: uppercase;
 	}
 }
+
+
+
+//MEDIA QUERIES//
+@media screen and (max-width: 840px) {
+  .black-container h1{
+    font-size: 30px;
+  }
+  .black-container h3{
+    font-size: 18px;
+  }
+}

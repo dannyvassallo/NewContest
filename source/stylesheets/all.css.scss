@@ -1,11 +1,20 @@
 @charset "utf-8";
 
+//VENDOR SCRIPTS//
 @import "vendor/_stickyfooter";
 @import "vendor/_animations";
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+//END VENDOR SCRIPTS//
 
+
+//SECTIONS//
 @import "_videoheaderstyles";
+@import "_banner";
 @import "_bodystyle";
 @import "_footerstyles";
+//END SECTIONS//
+
+
+//ANIMATION TWEAKS//
 @import "_myanimations";
-@import "_banner";
-@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+//END ANIMATION TWEAKS//

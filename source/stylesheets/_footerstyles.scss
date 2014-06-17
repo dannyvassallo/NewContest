@@ -1,18 +1,33 @@
+//MIXINS//
+@mixin repeatx(){
+	background-repeat: repeat-x;
+}
+@mixin repeaty(){
+	background-repeat: repeat-y;
+}
+//END MIXINS//
+
+
+//SCSS//
 footer {
 background-color: black;
+	
+	#footerwrap{
+	max-width: 800px;
+	margin: 0 auto;
+	}
+	.socials i{
+	color: white;
+	font-size: 35px;
+	padding: 20px 5px 20px 5px;
+	}
+
 }
-#footerwrap{
-max-width: 800px;
-margin: 0 auto;
-}
-.socials i{
-color: white;
-font-size: 35px;
-padding: 20px 5px 20px 5px;
-}
+
 .paperup{
 height: 50px;
 background-image: url("../images/tornpaperup.png");
-background-repeat: repeat-x;
+@include repeatx;
 width: 100%; 	
 }
+//END SCSS//
